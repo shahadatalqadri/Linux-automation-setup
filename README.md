@@ -1,67 +1,98 @@
-# 🐧 Linux Installation & Programming Setup Guide
+# 🐧 Linux Installation & Developer Setup Guide
 
-Welcome to the **Linux Installation & Programming Environment Setup Guide**.  
-এই Repository আপনার Linux ইনস্টলেশন এবং প্রোগ্রামিং সেটআপ সহজ করে তুলতে সহায়তা করবে।  
-
----
-
-## 🔥 Highlights
-
-- Step-by-Step Linux Installation Instructions
-- Post-Installation Essential Setup Guide
-- Ready-to-Use Installation Scripts
-- Programming Tools Installation Guide
-- Visual Guide with Screenshots
+Welcome to the **Complete Linux Installation & Programming Environment Setup Guide**.  
+এই গাইডটি আপনাকে Linux ইনস্টলেশন থেকে শুরু করে ডেভেলপমেন্ট সেটআপ পর্যন্ত ধাপে ধাপে সহায়তা করবে।  
 
 ---
 
 ## 📋 Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Choosing a Linux Distribution](#choosing-a-linux-distribution)
-- [Installation Guide](#installation-guide)
-- [Post-Installation Setup](#post-installation-setup)
-- [Essential Programming Tools](#essential-programming-tools)
-- [Using Provided Scripts](#using-provided-scripts)
-- [Contributing](#contributing)
-- [License](#license)
+1. [System Requirements](#system-requirements)
+2. [Choosing a Linux Distribution](#choosing-a-linux-distribution)
+3. [Step-by-Step Installation Guide](#step-by-step-installation-guide)
+4. [First Boot & Post-Installation Setup](#first-boot--post-installation-setup)
+5. [Installing Essential Development Tools](#installing-essential-development-tools)
+6. [You're Ready!](#youre-ready)
 
 ---
 
-## ✅ Prerequisites
+## 🖥️ System Requirements
 
-- 4 GB RAM (Minimum)
-- 20 GB+ Free Disk Space
-- Bootable USB Drive (16 GB Recommended)
-- Active Internet Connection
+- ✅ **4 GB RAM** (Recommended 8 GB)
+- ✅ **20 GB Free Disk Space**
+- ✅ USB Drive (Minimum 8 GB for bootable)
+- ✅ Internet Connection
 
 ---
 
 ## 🐧 Choosing a Linux Distribution
 
-| Distro | Best For | Download |
-|--------|----------|----------|
-| Ubuntu | Beginners, Developers | [ubuntu.com](https://ubuntu.com/download) |
-| Fedora | Latest Features | [getfedora.org](https://getfedora.org/) |
-| Debian | Stability | [debian.org](https://www.debian.org/distrib/) |
+| Distribution | Best For | Features |
+|--------------|----------|----------|
+| **Ubuntu** | Beginners, Developers | User-friendly, LTS Support, Vast Community |
+| **Fedora** | Latest Software, Developers | Cutting-edge packages, Security features |
+| **Debian** | Stability, Servers | Rock-solid performance, Stable releases |
 
 ---
 
-## 📝 Installation Guide
+## 📝 Step-by-Step Installation Guide
 
-Complete step-by-step installation manual:  
-📄 [Linux Installation Steps](docs/linux_installation_steps.md)
+### 1️⃣ Download Linux ISO  
+
+- **Ubuntu:** [https://ubuntu.com/download](https://ubuntu.com/download)  
+- **Fedora:** [https://getfedora.org/](https://getfedora.org/)  
+- **Debian:** [https://www.debian.org/distrib/](https://www.debian.org/distrib/)  
 
 ---
 
-## 🛠️ Post-Installation Setup
+### 2️⃣ Create a Bootable USB  
 
-After installing Linux, perform these steps:
-- System Update & Upgrade  
-- Install Drivers  
-- Configure Firewall  
-- Setup Essential Tools  
+- For **Windows:** Use **Rufus** — [https://rufus.ie/](https://rufus.ie/)
+- For **Linux/Mac:** Use **balenaEtcher** — [https://www.balena.io/etcher/](https://www.balena.io/etcher/)
 
-Run the script:
+**Steps:**
+- Insert USB Drive
+- Open Rufus/balenaEtcher
+- Select ISO file
+- Start the process to create bootable USB
+
+---
+
+### 3️⃣ Boot from USB & Install Linux  
+
+- Insert bootable USB & Restart your PC
+- Enter BIOS/UEFI (F2, F12, ESC, DEL — depends on your system)
+- Select **Boot from USB**
+- Follow On-Screen Installation Wizard:
+  - Choose Language & Keyboard
+  - Set Timezone
+  - Partition Disk (Automatic Recommended)
+  - Create Username & Password
+  - Start Installation
+
+---
+
+## 🛠️ First Boot & Post-Installation Setup
+
+### ✅ 1️⃣ Update System
+
 ```bash
-bash scripts/install_essential_tools.sh
+sudo apt update && sudo apt upgrade -y
+###Install Basic utilities
+sudo apt install -y curl wget git vim build-essential
+### Setup Firewall (optional)
+sudo ufw enable
+💻 Installing Essential Development Tools
+
+Tool	Installation Command
+
+Git	sudo apt install git
+Python3 & pip	sudo apt install python3 python3-pip
+Node.js & npm	sudo apt install nodejs npm
+GCC/G++	sudo apt install build-essential
+VS Code (via Snap)	sudo snap install code --classic
+🎯 You're Ready!
+
+Congratulations! 🎉
+আপনার Linux ইনস্টলেশন এবং ডেভেলপমেন্ট এনভায়রনমেন্ট প্রস্তুত ✅
+শুরু করুন আপনার Coding Journey 🚀
