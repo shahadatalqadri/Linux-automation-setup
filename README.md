@@ -86,13 +86,13 @@ sudo ufw enable
 
 Tool	Installation Command
 
-Git	sudo apt install git
-Python3 & pip	sudo apt install python3 python3-pip
-Node.js & npm	sudo apt install nodejs npm
-GCC/G++	sudo apt install build-essential
-VS Code (via Snap)	sudo snap install code --classic
-🎯 You're Ready!
-
-Congratulations! 🎉
-আপনার Linux ইনস্টলেশন এবং ডেভেলপমেন্ট এনভায়রনমেন্ট প্রস্তুত ✅
-শুরু করুন আপনার Coding Journey 🚀
+###Git
+sudo apt install git
+###Python3 & pip
+sudo apt install python3 python3-pip
+###Node.js & npm
+sudo apt install nodejs npm
+###GCC/G++
+sudo apt install build-essential
+###VS Code (via Snap)
+sudo snap install code --classic
