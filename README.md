@@ -12,7 +12,6 @@ Welcome to the **Complete Linux Installation & Programming Environment Setup Gui
 3. [Step-by-Step Installation Guide](#step-by-step-installation-guide)
 4. [First Boot & Post-Installation Setup](#first-boot--post-installation-setup)
 5. [Installing Essential Development Tools](#installing-essential-development-tools)
-6. [You're Ready!](#youre-ready)
 
 ---
 
